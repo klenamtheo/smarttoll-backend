@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: smarttoll-backend
+    env: static
+    staticPublishPath: .
+    buildCommand: ""
+    startCommand: ""
