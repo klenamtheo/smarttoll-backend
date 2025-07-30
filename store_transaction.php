@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: POST");
 
-$conn = new mysqli("localhost:3306", "root", "Creditable@1", "flutter_app");
+$conn = new mysqli("mysql.railway.internal:3306", "root", "azahvcXSSjjpUmAUKyInCnkIFBLbIFCB", "railway");
 
 $data = json_decode(file_get_contents("php://input"));
 

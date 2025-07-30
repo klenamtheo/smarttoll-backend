@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 
 // Connect to DB
-$conn = new mysqli("localhost:3306", "root", "Creditable@1", "flutter_app");
+$conn = new mysqli("mysql.railway.internal:3306", "root", "azahvcXSSjjpUmAUKyInCnkIFBLbIFCB", "railway");
 
 // Check connection
 if ($conn->connect_error) {

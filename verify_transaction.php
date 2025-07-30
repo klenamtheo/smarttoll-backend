@@ -39,7 +39,7 @@ $paystackData = json_decode($response, true);
 if ($paystackData['data']['status'] === 'success') {
 
     // 3. Connect to DB
-    $conn = new mysqli("localhost:3306", "root", "Creditable@1", "flutter_app");
+    $conn = new mysqli("mysql.railway.internal:3306", "root", "azahvcXSSjjpUmAUKyInCnkIFBLbIFCB", "railway");
     if ($conn->connect_error) {
         echo json_encode(["success" => false, "message" => "DB connection failed"]);
         exit;
